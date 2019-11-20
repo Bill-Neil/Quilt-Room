@@ -1,0 +1,102 @@
+
+:root {
+    --bright: #E94377;
+    --mid: #547D98;
+    --light: #8CAFCE;
+    --bg: #fff;
+    --bgoffwhite: #F9F9F9;
+    --bggrey: #F6F6F6;
+  }
+
+.wrapper {
+}
+
+  /* FONTS */
+body p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    font-weight: 100;
+    line-height:26px;
+    color:#262626;
+}
+
+  .cs {
+      font-family: 'Dancing Script', cursive;
+      font-size: 1.6875rem;
+      font-weight: 100;
+  }
+  .cm {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.25rem;
+    font-weight: 100;
+}
+.cl {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+
+/* WRAPPER */
+.wrapper {
+    display:grid;
+    grid-gap: 20px;
+
+}
+
+
+
+/* PRE-HEAD */
+.prehead {
+  /* height: 36px; */
+  font-family: 'Lato', sans-serif;  
+  font-size: 0.9rem;
+  background-color: var(--light);
+  color: var(--bg);
+}
+.prehead a:hover {
+  color: var(--bright);
+} 
+.prehead .fas {
+font-size: 0.9rem;
+padding:0 0.3rem 0 2rem;
+}
+
+.prehead .fab {
+  font-size:1.1rem;
+  padding-right:0.8rem;
+}
+.prehead-nav {
+  display:block;
+  text-decoration: none;
+  line-height:26px;
+}
+.prehead-nav ul{
+  display:grid;
+  grid-template-columns: repeat( 3, minmax(250px, 1fr) );
+  padding: 9px 0 9px 0;
+}
+
+  .prehead-nav ul li a {
+    justify-content: center;
+    color: var(--bg);
+  }
+  .prehead-nav ul :nth-child(1) {
+    justify-self: center;
+
+   }
+   .prehead-nav ul :nth-child(2) {
+    justify-self: center;
+   }
+   .prehead-nav ul :nth-child(3) {
+    justify-self: center;
+   }
+ 
+  .prehead-nav ul li a:hover{
+    color: var(--bright);
+    transition: 1s;
+  }
+
+
+
+
