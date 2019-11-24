@@ -1,0 +1,173 @@
+:root {
+  --bright: #E94377;
+  --mid: #547D98;
+  --light: #8CAFCE;
+  --bg: #fff;
+  --bgoffwhite: #F9F9F9;
+  --bggrey: #F6F6F6;
+}
+
+
+/* FONTS */
+body p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 26px;
+  color: #262626;
+}
+
+.cs {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.6875rem;
+  font-weight: 100;
+}
+
+.cm {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.25rem;
+  font-weight: 100;
+}
+
+.cl {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+
+/* WRAPPER */
+.wrapper {
+  display: grid;
+  /* grid-gap: 20px; */
+  /* max-width: 1200px;  */
+  /* margin: 0 auto;  */
+}
+
+/* SECTION: TOPLINKS */
+.toplinks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-family: 'Lato', sans-serif;
+  font-size: 0.9rem;
+  background-color: var(--light);
+  color: var(--bg);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  line-height: 22px;
+  grid-template-areas:
+    "toplinks1 toplinks2 toplinks3"
+}
+
+.toplinks1 {grid-area: toplinks1;}
+
+.toplinks2 {grid-area: toplinks2;}
+
+.toplinks3 {grid-area: toplinks3;}
+
+/* style the toplinks */
+
+.toplinks a {
+  color: var(--bg);
+}
+
+.toplinks .fas {
+  font-size: 0.9rem;
+  padding: 0 0.3rem 0 2rem;
+}
+
+.toplinks .fab {
+  font-size: 1.2rem;
+  padding-right: 0.8rem;
+}
+
+.toplinks a:hover {
+  color: var(--bright);
+  transition: 1s;
+}
+
+.toplinks1 {
+  justify-self: left;
+  margin-left: 10px;
+  /* display: flex;
+  justify-content: center; */
+  align-self: center;
+}
+
+.toplinks2 {
+  justify-self: center;
+}
+
+.toplinks3 {
+  justify-self: right;
+  padding-right: 50px;
+}
+
+/* Puts the pipes between the link items */
+.toplinks1 a {
+  padding:0 6px;
+  border-right:  solid var(--bg) 1px;
+}
+/* excludes the last one */
+.toplinks1 a:last-child {
+    border-right:  none;
+  }
+  /* --------------------------------------------------------------------- */
+
+/* SECTION: HEADER */
+
+header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  min-height:200px;
+  width:1260px;
+  margin:auto;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.6875rem;
+  font-weight: 100;
+  background-color: var(--bg);
+    border: solid 1px blueviolet;
+  color: var(--bright);
+  /* padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  line-height: 22px; */
+  grid-template-areas:
+    "logo search-panel" 
+  
+  }
+/* name the areas */
+.logo {grid-area: logo;}
+.search-panel {grid-area: search-panel;}
+
+.logo {background-color: pink;}
+.search-panel {background-color: blue;
+}
+/* **************** */
+
+ /* --------------------------------------------------------------------- */
+
+/* SECTION: ???????? */
+
+
+@media only screen and (max-width: 700px) {
+
+  /* SECTION : TOPLINKS */
+  .toplinks {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "toplinks1"
+      "toplinks2"
+      "toplinks3"
+  }
+  .toplinks1,  .toplinks2,  .toplinks3 {
+    margin:auto;
+  }
+
+  .toplinks2,  .toplinks3 {
+    padding-top:1rem;
+  }
+  /* --------------------------------------------------------------------- */
+
+
+
+}
